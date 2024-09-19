@@ -29,4 +29,4 @@ function showSection(sectionId) {
 // Inicializa la sección actual al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     showSection('Inicio'); // Mostrar la sección 'Inicio' por defecto
-});
+}); 

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOF</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onclick="showSection('Inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('Productos')">Productos</a></li>
+                <li><a href="#" onclick="showSection('Contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="Titulo"><em>WOOF</em></div>
+    </header>
+    <main>
+        <div class="seccion">
+            <section id="Inicio" class="content-section">
+                <h1 class="subtitulos">Alimentos organicos,<br>
+                sin pesticidas, ni quimicos</h1>
+                <div class="conteiner">
+                    <h2 class="subtitulos">¡Elige lo mejor para ellos!</h2>
+                </div>
+                <div class="center">
+                    <video width="400" height="600" controls>
+                        <source src="imagenes/woofvideo.webm" type="video/webm">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+                <h1 class="subtitulos">La mejor opcion para su salud<br>y tu cartera $</h1>
+            </section>
+        </div>
+        <section id="Productos" class="content-section" style="display: none;">
+            <div class="conteiner">
+                <h1 class="subtitulos">Placa de Zanahoria</h1>
+                <figure class="center"> <img src="imagenes/zanahoriawoof.jpeg"></figure>
+                <p class="info">1 kl <br>$35.00 c/u</p>
+                <h3 class="info"><em>Un kilo de carne con zanahoria y calabaza.<br>Rico en Potasio.</em></h3><br>
+                <h1 class="subtitulos">Placa de Betabel</h1>
+                <figure class="center"><img src="imagenes/betabelwoof.jpeg"></figure>
+                <p class="info">1 kl <br> $35.00 c/u</p>
+                <h3 class="info"><em>Un kilo de carne con betabel y calabaza.<br>Rico en Vitamina B.</em></h3><br>
+                <h1 class="subtitulos">Placa de Carne</h1>
+                <figure class="center"><img src="imagenes/carnewoof.jpeg"></figure>
+                <p class="info">1 kl <br> $35.00 c/u</p>
+                <h3 class="info"><em>Un Kilo de carne/Pata de pollo y vísceras de pollo. <br>Rico en Calcio .</em></h3><br>
+                <h1 class="subtitulos">Placa Premium</h1>
+                <figure class="center"><img></figure>
+                <p class="info">1 kl <br> $70.00</p>
+                <h3 class="info"> Manejamos la opcion Premium <br>que es 500 gr de pollo y 500 gr de res. <br>32% mas rico en proteína </h3>
+                <h1 class="subtitulos">Patitas de pollo y Medallones</h1>
+                <figure class="center"><img src="imagenes/patitaswoof.jpg"></figure>
+                <p class="info">20 patitas de pollo <br> $50 c/bolsa</p>
+                <p class="info">25 medallones de carne <br> $100 c/bolsa</p>
+                <h3 class="info"><em>Patitas de pollo sin uñas. Perfectas para premiarlos! <br> Medalones de carne. Para aquellos que son todos unos bebes!</em></h3><br>
+            </div> 
+        </section>
+        <section id="Contacto" class="content-section" style="display: none;">
+            <div class="conteiner">
+                <h1 class="center"><em class="subtitulos">¡Contactanos!</em></h1>
+                <em class="info"><br>Olvidate de las harinas <br> y los conservadores.<br><br></em>
+                <em class="info">Cuida de ellos con una alimentacion<br>deliciosa y de calidad.</em>
+                <em class="info"><br>¡Nos dan lo mejor, merecen lo mejor!<br><br></em>
+                <div class="woof-image-container">
+                    <figure class="conteiner"><img src="imagenes/woof.png" class="woof-image"></figure>
+                </div>
+                <h3 class="info">Horario: <br>Lunes a Domingo <br><br>9:00am a 8:00pm<br>
+                    Telefono <br>33 1261 8282</h3>
+                    <a href="https://wa.me/3312618282" target="_blank" class="contact-link">WhatsApp</a>
+                <p class="info">Estamos ubicados en:</p>  
+                <a href="https://maps.app.goo.gl/KenJH6JTRgpnrTJLA?g_st=iw" target="_blank">📍 Jorullo 1218,Indepencia,<br>44379 Guajalajara, jal.</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 WOOF</p>
+    </footer>
+
+    <div class="sticker-container">
+        <!-- Añade tus stickers aquí con la clase 'sticker' y un ID único para cada uno -->
+        <!-- Solo en Inicio -->
+        <img src="imagenes/dobby.png" class="sticker" id="sticker2" alt="Sticker 2"> <!-- Centro izquierdo en Inicio -->
+        <img src="imagenes/carnes.png" class="sticker" id="sticker3" alt="Sticker 3"> <!-- Centro derecho en Inicio -->
+        <!-- Solo en Productos -->
+        <img src="imagenes/patascarne.png" class="sticker" id="sticker4" alt="Sticker 4"> <!-- Inferior derecho en Productos -->
+        <img src="imagenes/ameli.png" class="sticker" id="sticker7" alt="Sticker 7"> <!-- Inferior izquierdo en Productos -->
+        <!-- Solo en Contacto -->
+        <img src="imagenes/pug.png" class="sticker" id="sticker5" alt="Sticker 5"> <!-- Inferior izquierdo en Contacto -->
+        <img src="imagenes/golden.png" class="sticker" id="sticker6" alt="Sticker 6"> <!-- Derecho medio en Contacto -->
+    </div>
+
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-x: hidden; /* Evita el desbordamiento horizontal */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 12px 0;
+            text-align: center; 
+        }
+        .Titulo {
+            font-family: "Vollkorn", serif;
+            font-weight: 400;
+            color: rgb(77, 45, 17);
+            text-align: center;
+            padding: 10px;
+            font-size: 6em; 
+        }
+        .subtitulos {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            color: rgb(122, 72, 26);
+            text-align: center;
+            padding: 8px;
+            font-size: 3em; 
+            display: inline-block;
+            max-width: 90vw; /* Limita el ancho máximo */
+        }
+        .info {
+            font-family: "Gupter", serif;
+            font-weight: 500;
+            color: black;
+            text-align: center;
+            font-size: 1.5em; 
+        }
+        .conteiner {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 10px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Ajuste el espacio entre enlaces */
+            padding: 10px 0; 
+            background-color: rgb(107, 71, 21);
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(135, 77, 30);
+            font-weight: bold;
+            padding: 3px;
+            font-size: 1em; 
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menu li {
+            float: left;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        .menu li a:hover {
+            background-color: #7d5419;
+        }
+        .seccion {
+            padding: 20px 0; 
+            text-align: center; 
+            margin: 0;
+        }
+        .center img {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 4px;
+            text-align: center; 
+        }
+        .contact-link {
+            color: black; 
+            font-size: 1.2em;
+            text-decoration: none;
+            background-color: #25D366;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .contact-link:hover {
+           text-decoration: underline;
+        }
+        footer {
+            background-color: rgb(77, 46, 2);
+            padding: 10px 0;
+            text-align: center;
+            color: aliceblue;
+        }
+        .sticker-container {
+            position: absolute; 
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Permite que los stickers no interfieran con otros eventos */
+            top: 0;
+            left: 0;
+            z-index: 10; /* Asegure que los stickers estén sobre el contenido */
+        }
+        .sticker {
+            position: absolute;
+            width: 480px; 
+            height: auto;
+        }
+        
+        
+        @media (max-width: 600px) {
+    .sticker {
+        width: 20vw; 
+    }
+
+    #sticker2 {
+        top: 5%;
+        left: 5%;
+    }
+    #sticker3 {
+        top: 25%;
+        right: 0px;
+    }
+    #sticker4 {
+        top: 10%;
+        right: 0px;
+    }
+    #sticker7 {
+        bottom: 5%;
+        left: 0px;
+    }
+    #sticker5 {
+        bottom: 5%;
+        left: 0px;
+    }
+    #sticker6 {
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+
+    /* Ajustes especificos para woof.png en dispositivos medianos */
+    #woof.png {
+        width: 15vw; /* Tamaño reducido para pantallas medianas */
+        bottom: 10%;
+        left: 10%;
+    }
+}
+
+/* Media Query para dispositivos pequeños (ej. teléfonos móviles) */
+@media (max-width: 480px) {
+    .sticker {
+        width: 30vw; 
+    }
+
+    #sticker2 {
+        top: 10%;
+        left: 10%;
+    }
+    #sticker3 {
+        top: 30%;
+        right: 10%;
+    }
+    #sticker4 {
+        top: 15%;
+        right: 10%;
+    }
+    #sticker7 {
+        bottom: 5%;
+        left: 10%;
+    }
+    #sticker5 {
+        bottom: 5%;
+        left: 10%;
+    }
+    #sticker6 {
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+    }
+
+    /* Ajustes especificos para woof.png en dispositivos pequeños */
+    #woof.png {
+        
+        width: 20vw; 
+        bottom: 5%;
+        left: 5%;
+    }
+}
+        /* Inicio */
+        #sticker2 { top: 0px; left: 0px; display: none; } 
+        #sticker3 { top: 53%; right: 0px; display: none; } 
+        /* Productos */
+        #sticker4 { top: 10%; right: 0px; display: none; } 
+        #sticker7 { bottom: 10px; left: 0px; display: none; } 
+        /* Contacto */
+        #sticker5 { bottom: 10px; left: 0px; display: none; } 
+        #sticker6 { top: 25%; right: 0px; transform: translateY(-50%); display: none; }
+    </style>
+    <!-- Aqui enlace Java Script y su contenido. -->
+    <script src="app.js"></script>
+</body>
+</html>

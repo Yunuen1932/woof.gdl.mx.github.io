@@ -88,18 +88,6 @@ nav a {
     border-radius: 4px;
     text-align: center; 
 }
-.contact-link {
-    color: black; 
-    font-size: 1.2em;
-    text-decoration: none;
-    background-color: #25D366;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.contact-link:hover {
-   text-decoration: underline;
-}
 footer {
     background-color: rgb(77, 46, 2);
     padding: 10px 0;
